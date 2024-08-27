@@ -12,6 +12,7 @@ def export_openapi_yaml(app: FastAPI, output_file: str):
         version="1.0.0",
         description="This is a sample API",
         routes=app.routes,
+        openapi_version="3.0.3"
     )
 
     # Convert to YAML
